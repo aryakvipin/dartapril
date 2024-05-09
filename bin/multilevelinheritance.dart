@@ -1,4 +1,4 @@
-class grandparent{
+class Grandparent{
   String gname="ram";
   int gage=85;
   void gpdetails(){
@@ -8,7 +8,7 @@ class grandparent{
   }
 }
 
-class parent extends grandparent{
+class Parent extends Grandparent{
   String pname="balu";
   int page=56;
   void pdetails(){
@@ -17,7 +17,7 @@ class parent extends grandparent{
 
   }
 }
-class child extends parent{
+class Child extends Parent{
   String cname="manu";
   int cage=20;
   void cdetails(){
@@ -27,7 +27,7 @@ class child extends parent{
   }
 }
 void main() {
-  child obj = child();
+  Child obj = Child();
   obj.pdetails();
   obj.cdetails();
   obj.gpdetails();
